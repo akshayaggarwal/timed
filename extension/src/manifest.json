@@ -12,8 +12,8 @@
   "author": "Amaury Martiny",
   "background": {
     "scripts": [
-      "scripts/utils/chromereload.js",
-      "scripts/background/background.js"
+      "scripts.babel/utils/chromereload.js",
+      "scripts.babel/background/background.js"
     ],
     "persistent": false
   },
@@ -29,7 +29,7 @@
         "styles/content/trackedWebsite.css"
       ],
       "js": [
-        "scripts/content/trackedWebsite.js"
+        "scripts.babel/content/trackedWebsite.js"
       ],
       "run_at": "document_end",
       "all_frames": false
@@ -39,7 +39,7 @@
         "*://localhost/*"
       ],
       "js": [
-        "scripts/content/timed.js"
+        "scripts.babel/content/timed.js"
       ],
       "run_at": "document_end",
       "all_frames": false
@@ -52,5 +52,6 @@
     },
     "default_title": "Timed",
     "default_popup": "popup.html"
+	
   }
 }
